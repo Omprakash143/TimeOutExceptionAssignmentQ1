@@ -6,7 +6,7 @@ pipeline {
         stage("Git checkout"){
             steps{
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, 
-                extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/bhanu-prakash3/TimeOutException.git']]])
+                extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Omprakash143/TimeOutExceptionAssignmentQ1.git']]])
             }
         }
         stage("maven build"){
